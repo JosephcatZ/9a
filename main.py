@@ -29,18 +29,7 @@ factorials ={
     5:120,
     6:720
 }
-print(len(keys))
-def factorial(x):
-    if x in factorials:
-        return(factorials[x])
-    else:
-        print(x)
-        if x-1 in factorials:
-            j = x*factorials[x-1]
-        else:
-            j = x*factorial(x-1)
-        factorials[x] = j
-        return(j)    
+print(len(keys))  
 def combos(x):
     total = []
     if len(x) > 3:
